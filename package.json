@@ -50,11 +50,6 @@
     "swagger-to-html",
     "swagger"
   ],
-  "config": {
-    "ghooks": {
-      "pre-commit": "standard"
-    }
-  },
   "files": [
     "index.js",
     "handlebars",
