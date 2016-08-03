@@ -7,7 +7,6 @@
 --}}
 <div id="operation-{{htmlId path}}-{{htmlId method}}" class="swagger--panel-operation-{{method}} panel">
     <div class="panel-heading">
-        <div class="operation-summary">{{md summary stripParagraph="true"}}</div>
         <h3 class="panel-title">
             <span class="operation-name">{{toUpperCase method}}</span>
             <strong>{{path}}</strong>
@@ -24,11 +23,14 @@
         <section class="sw-operation-description">
             {{md operation.description}}
         </section>
+        <h4>Parameters</h4>
+        {{>swagger/parameters parameters=parameters}}
         {{! The _request_body variable is filled with the parameter `body` by the preprocessor. }}
         {{#if _show_requst_body_section}}
+            <h4>Request body</h4>
             {{>swagger/request-body consumes=operation.consumes body=_request_body}}
         {{/if}}
-        {{>swagger/parameters parameters=parameters}}
+        <h4>Responses</h4>
         {{>swagger/responses}}
         {{>swagger/security}}
     </div>
