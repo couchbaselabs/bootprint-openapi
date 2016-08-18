@@ -30,7 +30,7 @@ require('bootprint')
   // Customize configuration, override any options
   .merge({/* Any other configuration */})
   // Specify build source and target
-  .build('./../../tmp/lite.json', './../../../site/gen-hippo/develop/references/couchbase-lite/rest-api')
+  .build('./../../tmp/cbl.json', './../../../site/gen-hippo/develop/references/couchbase-lite/rest-api')
   // Generate swagger-documentation into "target" directory
   .generate()
   .done(console.log);
