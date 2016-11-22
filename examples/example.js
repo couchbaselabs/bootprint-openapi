@@ -5,7 +5,7 @@ require('bootprint')
   // Customize configuration, override any options
   .merge({/* Any other configuration */})
   // Specify build source and target
-  .build('./../../tmp/admin.json', './../../../site/gen-hippo/references/sync-gateway/admin-rest-api')
+  .build('./../../tmp/admin.json', './../../../tmp/references/sync-gateway/admin-rest-api')
   // Generate swagger-documentation into "target" directory
   .generate()
   .done(console.log);
@@ -18,7 +18,7 @@ require('bootprint')
   // Customize configuration, override any options
   .merge({/* Any other configuration */})
   // Specify build source and target
-  .build('./../../tmp/public.json', './../../../site/gen-hippo/references/sync-gateway/rest-api')
+  .build('./../../tmp/public.json', './../../../tmp/references/sync-gateway/rest-api')
   // Generate swagger-documentation into "target" directory
   .generate()
   .done(console.log);
@@ -30,7 +30,7 @@ require('bootprint')
   // Customize configuration, override any options
   .merge({/* Any other configuration */})
   // Specify build source and target
-  .build('./../../tmp/cbl.json', './../../../site/gen-hippo/references/couchbase-lite/rest-api')
+  .build('./../../tmp/cbl.json', './../../../tmp/references/couchbase-lite/rest-api')
   // Generate swagger-documentation into "target" directory
   .generate()
   .done(console.log);
